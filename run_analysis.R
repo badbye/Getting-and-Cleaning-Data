@@ -21,6 +21,7 @@ features = read.table('features.txt', colClasses='character')
 mean.std.index = grepl('mean\\(\\)|std\\(\\)', features[, 2], ignore.case=T)
 wear2 = X[, mean.std.index]
 colnames(wear2)= features[mean.std.index, 2]
+
 ################################################################################
 # step 3:Uses descriptive activity names to name the activities in the data set.
 # step 4:Appropriately labels the data set with descriptive activity names.                              
