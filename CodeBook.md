@@ -24,21 +24,27 @@ y: merged by y.train and y.test.
 subject: merged by subject.train and subject.test.
 
 wear: Merged by X, y and subjet. First dataset asked by step 1.
-   
-   subject: refers to each subject.
-   
-   activity: WALKING; WALKING_UPSTAIRS; WALKING_DOWNSTAIRS; SITTING; STANDING; LAYING.
-   
-   others: kinds of measurements for each activity and each subject.
 
-step 2:
+variables in wear:
+
+*  subject: refers to each subject.
+   
+*  activity: WALKING; WALKING_UPSTAIRS; WALKING_DOWNSTAIRS; SITTING; STANDING; LAYING.
+   
+*  others: kinds of measurements for each activity and each subject.
+
+step 2&3&4:
 -----------------------------------------------------
 mean.std.index: indicates whether a variable is a mean/std measurement.
+
 wear2: extract from wear, just contains the mean and standard deviation of each measurement corresponding to each activity and each subject.
 
 step 5:
 --------------------------------------------
 subject.activity: Final tiny data asked by step 5. reshaped from wear2. 
-   subject: refers to each subject.
-   activity: WALKING; WALKING_UPSTAIRS; WALKING_DOWNSTAIRS; SITTING; STANDING; LAYING.
-   others: mean or standard deviation of measurements for each activity and each subject.
+
+variables in subject.activity:
+
+*   subject: refers to each subject.
+*   activity: WALKING; WALKING_UPSTAIRS; WALKING_DOWNSTAIRS; SITTING; STANDING; LAYING.
+*   others: mean or standard deviation of measurements for each activity and each subject.
